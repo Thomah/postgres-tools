@@ -9,4 +9,4 @@ DATE=`date +%Y-%m-%d`
 DOW=`date +%A`
 BACKUPFILE="$BACKUPDIR/$FILENAME"
 
-pg_restore -h $HOST -p $PORT -U $USERNAME -d $DBNAME -c $BACKUPFILE --no-owner --role=$USERNAME 2>> "$FILENAME.restore.log"
+pg_restore -h $HOST -p $PORT -U $USERNAME -d $DBNAME -c $BACKUPFILE --no-owner --role=$USERNAME 2>> "$BACKUPFILE.restore.log"

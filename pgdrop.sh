@@ -8,4 +8,4 @@ DATE=`date +%Y-%m-%d`
 DOW=`date +%A`
 FILENAME=$BACKUPDIR/$DATE.$DOW
 
-dropdb -i -h $HOST -p $PORT -U $USERNAME $DBNAME 2>> "$FILENAME.log" 
+dropdb -i -h $HOST -p $PORT -U $USERNAME $DBNAME 2>> "$FILENAME.drop.log" 

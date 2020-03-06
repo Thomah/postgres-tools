@@ -10,4 +10,4 @@ DOW=`date +%A`
 FILENAME=$BACKUPDIR/$DATE.$DOW
 BACKUPFILE="$BACKUPDIR/$FILENAME"
 
-pg_restore -h $HOST -p $PORT -U $USERNAME -d $DBNAME -c $BACKUPFILE --no-owner --role=$USERNAME 2>> "$FILENAME.log"
+pg_restore -h $HOST -p $PORT -U $USERNAME -d $DBNAME -c $BACKUPFILE --no-owner --role=$USERNAME 2>> "$FILENAME.restore.log"

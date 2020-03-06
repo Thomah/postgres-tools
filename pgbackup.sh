@@ -8,4 +8,4 @@ DATE=`date +%Y-%m-%d`
 DOW=`date +%A`
 FILENAME=$BACKUPDIR/$DATE.$DOW
 
-pg_dump -h $HOST -p $PORT -U $USERNAME -f "$FILENAME.tar" -F t $DBNAME 2>> "$FILENAME.log"
+pg_dump -h $HOST -p $PORT -U $USERNAME -f "$FILENAME.tar" -F t $DBNAME 2>> "$FILENAME.backup.log"

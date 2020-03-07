@@ -2,7 +2,6 @@
 
 SCRIPT_PATH=`dirname $0`
 CONF_NAME=$1
-source conf/$CONF_NAME.sh
 source $SCRIPT_PATH/conf/$CONF_NAME.sh
 
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/postgres/bin:/usr/local/pgsql/bin
